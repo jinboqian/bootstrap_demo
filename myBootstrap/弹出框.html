@@ -1,0 +1,56 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>弹出框(Popover)</title>
+  
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+
+<script src="js/jquery-1.10.1.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+  <style>
+  body{
+    padding: 5%;
+  }
+  </style>
+</head>
+<body> 
+	<h2>需要js触发</h2>
+   <button type="button" 
+          class="btn btn-default" 
+          data-toggle="popover" 
+          data-placement="bottom" 
+          title="提示框居左" 
+          data-content="我是弹出框的内容"
+          data-html="true"
+          >
+         data设置弹出内容
+  </button>
+  <script>
+  $(function(){
+    $('[data-toggle="popover"]').popover();
+    
+    
+});
+
+  </script>
+ 
+  <button type="button" 
+          class="btn btn-default" 
+          id="myPopover">
+          js设置弹出内容
+  </button>
+
+<script>
+  	$(function(){
+  $('#myPopover').popover({
+     title:"我是弹出框的标题",
+     content:"我是弹出框的内容",
+     placement:"right"
+  });
+}); 
+
+</script>
+
+</body>
+</html>

@@ -1,0 +1,155 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>触发提示框方法</title>
+<link rel="stylesheet" href="css/bootstrap.min.css">
+<link rel="stylesheet" href="css/imgbig.css" />
+<script src="js/jquery-1.10.1.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+
+  <style id="jsbin-css">
+  body {
+    padding: 20px;
+  }
+  .btn {
+    margin: 20px 10px 20px;
+  }
+
+  </style>
+</head>
+<body>
+
+	<h3>需要js触发<h4>1. $('[data-toggle="tooltip"]').tooltip();<br>title优先级高</h4></h3>
+  <h3>按钮做的提示框</h3> 
+  <button type="button" 
+          class="btn btn-default" 
+          data-toggle="tooltip" 
+          data-placement="left" 
+          data-original-title="提示框在左边 ~" 
+         >
+  提示框居左      
+  </button>
+  <button type="button" 
+          class="btn btn-default" 
+          data-toggle="tooltip" 
+          data-placement="top" 
+          data-original-title="提示框在顶部"
+           data-animation="true"
+           data-trigger="click">
+顶部点击提示     
+  </button>
+  <button type="button" 
+          class="btn btn-default" 
+          data-toggle="tooltip" 
+          data-placement="bottom" 
+          data-original-title="提示框在底部"
+          data-delay:5000>
+  提示框在底部        
+  </button>
+  <button type="button" 
+          class="btn btn-default" 
+          data-toggle="tooltip" 
+          data-placement="right" 
+          data-original-title="提示框居右">
+  提示框居右      
+  </button>
+  <h3>链接制作的提示框</h3>
+  <a class="btn btn-primary" 
+     data-toggle="tooltip" 
+     data-placement="left" 
+     title="提示框居左">
+     提示框居左
+  </a>
+  <a class="btn btn-primary" 
+     data-toggle="tooltip" 
+     data-placement="top" 
+     title="提示框在顶部">
+     提示框在顶部
+  </a>
+  <a class="btn btn-primary" 
+     data-toggle="tooltip" 
+     data-placement="bottom" 
+     title="提示框在底部">
+     提示框在底部
+  </a>
+  <a class="btn btn-primary" 
+     data-toggle="tooltip" 
+     data-placement="right" 
+     title="1"
+     >
+     提示框居右
+  </a>
+  <h3>
+  	js设置提示框
+  </h3>
+  <a href="##" 
+     class="btn btn-primary" 
+     id="myTooltip">
+     JS设置提示内容
+  </a>
+  <a href="##" 
+     class="btn btn-primary" 
+     id="myTooltip2">
+     没有设置提示
+  </a>
+  <h4>data-animation="true"</h4>
+  <button type="button" 
+  class="btn btn-default" 
+  data-toggle="tooltip" 
+  data-placement="left" 
+  data-original-title="data-animation='true'"
+  data-animation
+  data-animation="true">data-animation="true"</button>
+  
+  <h4>data-html="true"</h4>
+  <button type="button" 
+  class="btn btn-default" 
+  data-toggle="tooltip" 
+  data-placement="top" 
+  data-original-title="<h1>data-html='true'</h1>"
+  data-html="true">data-html="true"</button>
+  
+  <h4>data-trigger="click"</h4>
+  <button type="button" 
+  class="btn btn-default" 
+  data-toggle="tooltip" 
+  data-placement="bottom" 
+  data-original-title="data-trigger='click'"
+  data-trigger="click">data-trigger="click"</button> 
+  <h4>data-delay</h4>
+  <button type="button" 
+  class="btn btn-default" 
+  data-toggle="tooltip" 
+  data-placement="bottom" 
+  data-original-title="data-delay"
+   data-delay='{"show":"1000", "hide":"2000"}' >
+   data-delay='{"show":"1000", "hide":"2000"}' 
+  </button> 
+  <h4>data-template</h4>
+  <button type="button" 
+  class="btn btn-default" 
+  data-toggle="tooltip" 
+  data-placement="bottom" 
+  data-original-title="data-template"
+  data-template="<div class='tooltip'><div class='tooltip-arrow'></div><div class='tooltip-inner'></div></div>" >
+   默认html模板样式
+  </button> 
+  
+ <img src="img/tip.jpg" class="img-responsive">
+  <img src="img/tip_js.jpg" class="img-responsive">
+  <script>
+  $(function(){
+  	//触发必要
+    $('[data-toggle="tooltip"]').tooltip();
+    //JS的设置
+    $('#myTooltip').tooltip({
+      title:"我是一个提示框，我在顶部出现",
+      placement:'top'
+    });
+  });
+  </script>
+<script src="js/bigpic.js"></script>
+</body>
+
+</html>

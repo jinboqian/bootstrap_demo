@@ -1,0 +1,75 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>选项卡（Tabs）</title>
+<link rel="stylesheet" href="css/bootstrap.min.css">
+
+<script src="js/jquery-1.10.1.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script>
+//js触发方法
+    $(function(){
+    $("#myTab2 a").click(function(e){
+        e.preventDefault();
+        $(this).tab("show");
+    });
+})
+</script>
+</head>
+<body>
+<!-- 选项卡组件（菜单项nav-tabs）-->
+<h4>
+	关键一点，选项卡中链接的锚点要与对应的面板内容容器的ID相匹配。选项卡中data-toggle="tab"<br /><br />
+	在Bootstrap除了可以让 nav-tabs 具有选项卡的切换功能之外，还可以对胶囊式 nav-pills 导航也具有选项卡的功能。我们只需要将 nav-tabs 换成 nav-pills，另外关键一点是将 data-toggle="tab"换成data-toggle="pill"。
+</h4>
+<ul id="myTab" class="nav nav-tabs" role="tablist">
+    <li class="active"><a href="#bulletin" role="tab" data-toggle="tab">公告</a></li>
+    <li><a href="#rule" role="tab" data-toggle="tab">规则</a></li>
+    <li><a href="#forum" role="tab" data-toggle="tab">论坛</a></li>
+	<li><a href="#security" role="tab" data-toggle="tab">安全</a></li>
+	<li><a href="#welfare" role="tab" data-toggle="tab">公益</a></li>
+</ul>
+<!-- 选项卡面板 -->
+<div id="myTabContent" class="tab-content">
+	<div class="tab-pane active fade in" id="bulletin">公告内容面板</div>
+	<div class="tab-pane in" id="rule">规则内容面板</div>
+	<div class="tab-pane fade in" id="forum">论坛内容面板</div>
+	<div class="tab-pane" id="security">安全内容面板</div>
+	<div class="tab-pane" id="welfare">公益内容面板</div>
+</div>
+<h2>胶囊</h2>
+<ul id="myTab1" class="nav nav-pills" role="tablist">
+    <li class="active"><a href="#bulletin1" role="tab" data-toggle="pill">公告</a></li>
+    <li><a href="#rule1" role="tab" data-toggle="pill">规则</a></li>
+    <li><a href="#forum1" role="tab" data-toggle="pill">论坛</a></li>
+	<li><a href="#security1" role="tab" data-toggle="pill">安全</a></li>
+	<li><a href="#welfare1" role="tab" data-toggle="pill">公益</a></li>
+</ul>
+<!-- 选项卡面板 -->
+<div id="myTabContent1" class="tab-content">
+	<div class="tab-pane active fade in" id="bulletin1">公告内容面板</div>
+	<div class="tab-pane in" id="rule1">规则内容面板</div>
+	<div class="tab-pane fade in" id="forum1">论坛内容面板</div>
+	<div class="tab-pane" id="security1">安全内容面板</div>
+	<div class="tab-pane" id="welfare1">公益内容面板</div>
+</div>
+<h2>js触发</h2>
+<ul id="myTab2" class="nav nav-pills" role="tablist">
+    <li class="active"><a href="#bulletin2" role="tab" >公告</a></li>
+    <li><a href="#rule2" role="tab">规则</a></li>
+    <li><a href="#forum2" role="tab" >论坛</a></li>
+	<li><a href="#security2" role="tab" >安全</a></li>
+	<li><a href="#welfare2" role="tab" >公益</a></li>
+</ul>
+<!-- 选项卡面板 -->
+<div id="myTabContent2" class="tab-content">
+	<div class="tab-pane active fade in" id="bulletin2">公告内容面板1111</div>
+	<div class="tab-pane in" id="rule2">规则内容面板</div>
+	<div class="tab-pane fade in" id="forum2">论坛内容面板</div>
+	<div class="tab-pane" id="security2">安全内容面板</div>
+	<div class="tab-pane" id="welfare2">公益内容面板</div>
+</div>
+
+</body>
+</html> 

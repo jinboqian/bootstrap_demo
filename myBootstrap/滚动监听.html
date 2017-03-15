@@ -1,0 +1,147 @@
+<!DOCTYPE html> 
+<html lang="en"> 
+<head> 
+	<meta charset="utf-8"> 
+	<title>Bootstrap 滚动监听实例</title> 
+	<meta name="description" content="Bootstrap ScrollSpy example. You may also learn usage of navbar and dropdown.">
+	<link href="css/bootstrap.min.css" rel="stylesheet"> 
+	<style type="text/css">
+		.scrollexample {
+			height: 300px;
+			overflow: auto;
+			position: relative;
+		}
+	</style>
+</head>
+<body>
+	<nav id="navbar" class="navbar navbar-default">
+		<div class="navbar-header">
+			<button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".bs-js-navbar-scrollspy">
+				 <span class="sr-only">Toggle-navigation</span>  
+                <span class="sr-only">Toggle-navigation</span>  
+                <span class="icon-bar"></span>  
+                <span class="icon-bar"></span>  
+                <span class="icon-bar"></span>  
+            </button>   <a href="#" class="navbar-brand">Project Name</a>  
+		</div>
+		<div class="collapse navbar-collapse bs-js-navbar-scrollspy">
+			<ul class="nav navbar-nav">  
+                <li><a href="#fat">@fat</a></li>  
+                <li><a href="#mdo">@mdo</a></li>  
+				<li class="dropdown">
+					<a href="#" class="dropdown-toggle" data-toggle="dropdown">下拉</a>
+					<ul class="dropdown-menu">
+						<li><a href="#mysql">mysql</a></li>
+						<li><a href="#c">c</a></li>
+						<li><a href="#java">java</a></li>
+					</ul>
+				</li>
+				
+			</ul>
+		</div>
+		<div data-spy="scroll" data-target="#navbar" class="scrollexample">
+			<h4 id="fat">fat</h4>
+			<p>fatfatfatfatfatfatfatfatfatfatfatfatfatfatfatfatfatfatfatfatfatfat
+				fatfatfatfatfatfatfatfatfatfatfatfatfatfatfatfatfatfatfat
+				fatfatfatfatfatfatfatfatfatfatfatfatfatfatfatfatfatfatfatfat
+				fatfatfatfatfatfatfatfatfatfatfatfatfatfatfatfatfatfatfatfat
+				fatfatfatfatfatfatfatfatfatfatfatfatfatfatfatfatfatfatfatfat
+				fatfatsdaaaaaqwqeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeq
+				fatfatfatfatfatfatfatfatfatfatfatfatfatfatfatfatfatfatfatfatfatfat
+				fatfatfatfatfatfatfatfatfatfatfatfatfatfatfatfatfatfatfat
+				fatfatfatfatfatfatfatfatfatfatfatfatfatfatfatfatfatfatfatfat
+				fatfatfatfatfatfatfatfatfatfatfatfatfatfatfatfatfatfatfatfat
+				fatfatfatfatfatfatfatfatfatfatfatfatfatfatfatfatfatfatfatfat
+				fatfatsdaaaaaqwqeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeq
+				fatfatfatfatfatfatfatfatfatfatfatfatfatfatfatfatfatfatfatfatfatfat
+				fatfatfatfatfatfatfatfatfatfatfatfatfatfatfatfatfatfatfat
+				fatfatfatfatfatfatfatfatfatfatfatfatfatfatfatfatfatfatfatfat
+				fatfatfatfatfatfatfatfatfatfatfatfatfatfatfatfatfatfatfatfat
+				fatfatfatfatfatfatfatfatfatfatfatfatfatfatfatfatfatfatfatfat
+				fatfatsdaaaaaqwqeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeq
+				fatfatfatfatfatfatfatfatfatfatfatfatfatfatfatfatfatfatfatfatfatfat
+				fatfatfatfatfatfatfatfatfatfatfatfatfatfatfatfatfatfatfat
+				fatfatfatfatfatfatfatfatfatfatfatfatfatfatfatfatfatfatfatfat
+				fatfatfatfatfatfatfatfatfatfatfatfatfatfatfatfatfatfatfatfat
+				fatfatfatfatfatfatfatfatfatfatfatfatfatfatfatfatfatfatfatfat
+				fatfatsdaaaaaqwqeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeq
+				fatfatfatfatfatfatfatfatfatfatfatfatfatfatfatfatfatfatfatfatfatfat
+				fatfatfatfatfatfatfatfatfatfatfatfatfatfatfatfatfatfatfat
+				fatfatfatfatfatfatfatfatfatfatfatfatfatfatfatfatfatfatfatfat
+				fatfatfatfatfatfatfatfatfatfatfatfatfatfatfatfatfatfatfatfat
+				fatfatfatfatfatfatfatfatfatfatfatfatfatfatfatfatfatfatfatfat
+				fatfatsdaaaaaqwqeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeq
+				weqwefat</p>
+				<h4 id="mdo">mdo</h4>
+			<p>mdomdomdomdomdomdomdomdomdomdomdomdomdomdomdomdomdomdomdo
+				mdomdomdomdomdomdomdomdomdomdomdomdomdomdomdomdomdomdomdomdomdomdo
+				mdomdomdomdomdomdomdomdomdomdomdomdomdomdomdomdomdomdomdomdo
+				mdomdomdomdomdomdomdomdomdomdomdomdomdomdomdomdomdomdomdomdo
+				mdomdomdomdomdomdomdomdomdomdomdomdomdomdomdomdomdomdo
+				mdomdomdomdomdomdomdomdomdomdomdomdomdomdomdomdomdomdomdomdomdo
+				mdomdomdomdo
+				mdomdomdomdomdomdomdomdomdomdomdomdomdomdomdomdomdomdomdo
+				mdomdomdomdomdomdomdomdomdomdomdomdomdomdomdomdomdomdomdomdomdomdo
+				mdomdomdomdomdomdomdomdomdomdomdomdomdomdomdomdomdomdomdomdo
+				mdomdomdomdomdomdomdomdomdomdomdomdomdomdomdomdomdomdomdomdo
+				mdomdomdomdomdomdomdomdomdomdomdomdomdomdomdomdomdomdo
+				mdomdomdomdomdomdomdomdomdomdomdomdomdomdomdomdomdomdomdomdomdo
+				mdomdomdomdo
+				mdomdomdomdomdomdomdomdomdomdomdomdomdomdomdomdomdomdomdo
+				mdomdomdomdomdomdomdomdomdomdomdomdomdomdomdomdomdomdomdomdomdomdo
+				mdomdomdomdomdomdomdomdomdomdomdomdomdomdomdomdomdomdomdomdo
+				mdomdomdomdomdomdomdomdomdomdomdomdomdomdomdomdomdomdomdomdo
+				mdomdomdomdomdomdomdomdomdomdomdomdomdomdomdomdomdomdo
+				mdomdomdomdomdomdomdomdomdomdomdomdomdomdomdomdomdomdomdomdomdo
+				mdomdomdomdo
+				mdomdomdomdomdomdomdomdomdomdomdomdomdomdomdomdomdomdomdo
+				mdomdomdomdomdomdomdomdomdomdomdomdomdomdomdomdomdomdomdomdomdomdo
+				mdomdomdomdomdomdomdomdomdomdomdomdomdomdomdomdomdomdomdomdo
+				mdomdomdomdomdomdomdomdomdomdomdomdomdomdomdomdomdomdomdomdo
+				mdomdomdomdomdomdomdomdomdomdomdomdomdomdomdomdomdomdo
+				mdomdomdomdomdomdomdomdomdomdomdomdomdomdomdomdomdomdomdomdomdo
+				mdomdomdomdo
+				mdomdomdomdomdomdomdomdomdomdomdomdomdomdomdomdomdomdomdo
+				mdomdomdomdomdomdomdomdomdomdomdomdomdomdomdomdomdomdomdomdomdomdo
+				mdomdomdomdomdomdomdomdomdomdomdomdomdomdomdomdomdomdomdomdo
+				mdomdomdomdomdomdomdomdomdomdomdomdomdomdomdomdomdomdomdomdo
+				mdomdomdomdomdomdomdomdomdomdomdomdomdomdomdomdomdomdo
+				mdomdomdomdomdomdomdomdomdomdomdomdomdomdomdomdomdomdomdomdomdo
+				mdomdomdomdo
+				mdomdomdomdomdomdomdomdomdomdomdomdomdomdomdomdomdomdomdo
+				mdomdomdomdomdomdomdomdomdomdomdomdomdomdomdomdomdomdomdomdomdomdo
+				mdomdomdomdomdomdomdomdomdomdomdomdomdomdomdomdomdomdomdomdo
+				mdomdomdomdomdomdomdomdomdomdomdomdomdomdomdomdomdomdomdomdo
+				mdomdomdomdomdomdomdomdomdomdomdomdomdomdomdomdomdomdo
+				mdomdomdomdomdomdomdomdomdomdomdomdomdomdomdomdomdomdomdomdomdo
+				mdomdomdomdo
+				mdomdomdomdomdomdomdomdomdomdomdomdomdomdomdomdomdomdomdo
+				mdomdomdomdomdomdomdomdomdomdomdomdomdomdomdomdomdomdomdomdomdomdo
+				mdomdomdomdomdomdomdomdomdomdomdomdomdomdomdomdomdomdomdomdo
+				mdomdomdomdomdomdomdomdomdomdomdomdomdomdomdomdomdomdomdomdo
+				mdomdomdomdomdomdomdomdomdomdomdomdomdomdomdomdomdomdo
+				mdomdomdomdomdomdomdomdomdomdomdomdomdomdomdomdomdomdomdomdomdo
+				mdomdomdomdo
+				weqwefat</p>
+				<h4 id="mysql">MySQL</h4>
+		<p>
+			MySQL tutorial of w3cschool is a comprhensive tutorial to learn MySQL. We have hundreds of examples covered, often with PHP code. This helps you to learn how to create PHP-MySQL based web applications.
+		</p>
+		<h4 id="c">PostgreSQL</h4>
+		<p>
+			In 1986 the Defense Advanced Research Projects Agency (DARPA), the Army Research Office (ARO), the National Science Foundation (NSF), and ESL, Inc sponsored Berkeley POSTGRES Project which was led by Michael Stonebrakessr. In 1987 the first demo version of the project is released. In June 1989, Version 1 was released to some external users. Version 2 and 3 were released in 1990 and 1991. Version 3 had support for multiple storage managers, an query executor was improved, rule system was rewritten. After that, POSTGRES has been started to be implemented in various research and development projects. For example, in late 1992, POSTGRES became the primary data manager for the Sequoia 2000 scientific computing project4. User community around the project also has been started increasing; by 1993, it was doubled.
+		</p>
+		<h4 id="java">MongoDB</h4>
+		<p>
+			The term NoSQL was coined by Carlo Strozzi in the year 1998. He used this term to name his Open Source, Light Weight, DataBase which did not have an SQL interface.In the early 2009, when last.fm wanted to organize an event on open-source distributed databases, Eric Evans, a Rackspace employee, reused the term to refer databases which are non-relational, distributed, and does not conform to atomicity, consistency, isolation, durability - four obvious features of traditional relational database systems.</p>
+		<p>After reading the largest third party online MySQL tutorial by w3cschool, you will be able to install, manage and develop PHP-MySQL web applications by your own. We have a comprehensive, SQL TUTORIAL, which will help you to understand how to prepare queries to fetch data against various conditions.
+		</p>
+		</div>
+	</nav>
+<img src="img/QQ图片20161206130500.png"  class="img-responsive"/>
+<script src="js/jquery-1.10.1.min.js"></script>
+<script src="js/bootstrap.min.js"></script>
+
+	
+</body>
+</html>

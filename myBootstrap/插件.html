@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<title></title>
+		<link href="css/bootstrap.min.css" rel="stylesheet">
+		<link rel="stylesheet" href="css/font-awesome.min.css" />
+		<style>
+			.popover.bottom>.arrow:after {
+top: 1px;
+margin-left: -10px;
+content: " ";
+border-top-width: 0;
+border-bottom-color: #dd1d1d;
+}
+.popover-content {
+padding: 5px 8px;
+}
+		</style>
+	</head>
+	<body>
+		
+		<h2>模拟弹出框1 js触发 transitions+model</h2>
+		<button class="btn btn-primary" type="button" id="jsmodal">JS触发点击我</button>
+<div class="modal fade" id="mymodal" >
+    <div class="modal-dialog">
+        <div class="modal-content">
+        	<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+				<h4 class="modal-title">模态弹出窗标题</h4>
+			</div>
+			<div class="modal-body">
+				<p>模态弹出窗主体内容</p>
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+				<button type="button" class="btn btn-primary">保存</button>
+			</div>
+		</div><!-- /.modal-content -->
+	</div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+<h2>模拟弹出框2 data-target触发 transitions+model</h2>
+<button class="btn btn-primary" data-toggle="modal" data-target="#mymodal-data" type="button">通过data-target触发</button>
+<!-- 模态弹出窗内容 -->
+<div class="modal fade" id="mymodal-data" tabindex="-1" role="dialog" aria-labelledby="mySmallModalLabel" aria-hidden="true">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+				<h4 class="modal-title">模态弹出窗标题</h4>
+			</div>
+			<div class="modal-body">
+				<p>模态弹出窗主体内容</p>
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-default" data-dismiss="modal">关闭</button>
+				<button type="button" class="btn btn-primary">保存</button>
+			</div>
+		</div>
+	</div>
+</div>
+<!--<div class="popover bottom" role="tooltip"  style="display: block; margin-top: 50px;border: 1px solid #bb1818;
+	background-color: #dd1d1d;">
+	<div class="arrow" style="left: 10%;border-bottom-color: #bb1818;"></div>
+	<div class="popover-content" style="color: #fff;">底部的 Popover 中的一些内容</div>
+</div>-->
+
+<h2>12</h2>
+
+<div class="container" style="padding: 20px 50px 10px;" >
+	<button type="button" class="btn btn-default" title="Popover title"  
+			data-container="body" data-toggle="popover" data-placement="left" 
+			data-content="左侧的 Popover 中的一些内容">
+		左侧的 Popover
+	</button>
+	<button type="button" class="btn btn-primary" title="Popover title"  
+			data-container="body" data-toggle="popover" data-placement="top" 
+			data-content="顶部的 Popover 中的一些内容">
+		顶部的 Popover
+	</button>
+	<button type="button" class="btn btn-success" title="Popover title"  
+			data-container="body" data-toggle="popover" data-placement="bottom" 
+			data-content="底部的 Popover 中的一些内容">
+		底部的 Popover
+	</button>
+	<button type="button" class="btn btn-warning" title="Popover title"  
+			data-container="body" data-toggle="popover" data-placement="right" 
+			data-content="右侧的 Popover 中的一些内容">
+		右侧的 Popover
+	</button>
+</div>
+<h2>轮播,不可触屏滑动</h2>
+<p>
+	除了data-ride="carousel"、data-slide、data-slide-to 以外，轮播组件还支持其他三个自定义属性：
+	<br />
+	data-interval,number,5000,幻灯片轮换的等待时间（毫秒）。如果为false,轮播将不会自动开始循环
+	<br />
+	data-pause,string,hover,默认鼠标悬停留在幻灯片区域即停止播放，离开即开始播放
+	<br />
+	data-wrap,布尔值,true,轮播是否持续循环
+</p>
+<div id="slidershow" class="carousel slide" data-ride="carousel" data-wrap="true" data-interval="1000">
+    <!-- 设置图片轮播的顺序 -->
+    <ol class="carousel-indicators">
+        <li class="active" data-target="#slidershow" data-slide-to="0">1</li>
+        <li data-target="#slidershow" data-slide-to="1">2</li>
+        <li data-target="#slidershow" data-slide-to="2">3</li>
+    </ol>
+    <!-- 设置轮播图片 -->
+    <div class="carousel-inner">
+        <div class="item active">
+            <a href="##"><img src="img/banner_1.jpg" alt=""></a>
+            <div class="carousel-caption">
+                <h3>图片标题1</h3>
+                <p>描述内容1...</p>
+            </div>
+        </div>
+        <div class="item">
+            <a href="##"><img src="http://images3.c-ctrip.com/dj/201408/zj/zj_580145.jpg" alt=""></a>
+            <div class="carousel-caption">
+                <h3>图片标题2</h3>
+                <p>描述内容2...</p>
+            </div>
+        </div>
+        <div class="item">
+            <a href="##"><img src="http://images3.c-ctrip.com/dj/201408/zqgq_580145.jpg" alt=""></a>
+            <div class="carousel-caption">
+                <h3>图片标题3</h3>
+                <p>描述内容3...</p>
+            </div>
+        </div>
+    </div>
+        <!-- 设置轮播图片控制器 -->
+        <a class="left carousel-control" href="#slidershow" role="button" data-slide="prev" >
+        <span class="icon-arrow-left glyphicon-chevron-left"></span>
+    </a>
+    <a class="right carousel-control" href="#slidershow" role="button" data-slide="next">
+        <span class="icon-arrow-right glyphicon-chevron-right"></span>
+    </a>    
+  
+    </div>
+  </div>
+     
+
+
+	<script src="js/jquery-1.9.0.min.js"></script>
+	<script src="js/bootstrap3.2.0.min.js"></script>
+
+	
+
+	<script>
+
+$(function () { 
+	$("[data-toggle='popover']").popover();
+});
+
+
+	//模拟弹出窗
+  $(function(){
+    $("#jsmodal").click(function(){
+      $("#mymodal").modal("toggle");
+    });
+  });
+</script>
+	</body>
+</html>
